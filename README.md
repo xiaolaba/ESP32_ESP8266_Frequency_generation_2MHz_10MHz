@@ -8,14 +8,14 @@ GPIO18 輸出, 腳位看圖
 ![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
 
 ### [firmware](firmware), 2MHz only  
-burn.bat 燒錄指令檔, 
-COM3 要改, 每台PC或許會不同
+burn.bat 燒錄指令檔,  
+COM3 要改, 每台PC或許會不同  
 C:\Users\user0\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe, 可能也要改, 每個ARDUINO IDE 版本不同  
 
-WIN10底下, 燒錄的結果, 
-![firmware/burn_firmware_ok.JPG](firmware/burn_firmware_ok.JPG)
+WIN10底下, 燒錄的結果,  
+![firmware/burn_firmware_ok.JPG](firmware/burn_firmware_ok.JPG)  
 
-示波器或者邏輯分析儀掛到GPIO18, 應該可以看到 2MHz 50% 的方波  
+示波器或者邏輯分析儀掛到GPIO18, 應該可以看到 2MHz 50% 的方波   
 
 
 .
