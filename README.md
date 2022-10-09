@@ -6,14 +6,22 @@ GPIO18 輸出, 腳位看圖
 
 ![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
 
-### [firmware](firmware), 2MHz only
-burn.bat 燒錄指令檔
+### [firmware](firmware), 2MHz only  
+burn.bat 燒錄指令檔, COM3 要改, 每台PC或許會不同
+
+WIN10底下, 燒錄的結果, 
+![burn_firmware_ok.JPG](burn_firmware_ok.JPG)
+
+示波器或者邏輯分析儀掛到GPIO18, 應該可以看到 2MHz 50% 的方波  
+
+
+.
+.
 
 
 
 
-
-### 懶惰, 找到這個,  
+### 懶惰, 找到這個, 果然不行, 放棄它.
 https://www.edaboard.com/threads/issues-with-generating-11-mhz-square-wave-on-esp32-esp32-wrover-board.401727/post-1730410   
   
 本地存檔 [FFT_on_ESP32_PCM1808_03.zip](FFT_on_ESP32_PCM1808_03.zip)  
