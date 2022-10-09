@@ -6,7 +6,7 @@ GPIO18 輸出, 腳位看圖
 
 ![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
 
-### [firmware], 2MHz only
+### [firmware](firmware), 2MHz only
 burn.bat 燒錄指令檔
 
 
