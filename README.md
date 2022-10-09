@@ -1,7 +1,8 @@
 # ESP32_Frequency_generation_2MHz_10MHz  
 esp32, 想現撿現成的, 請問有沒有開源的ARDUINO 項目, 可以在一個 IO 輸出方波, 頻率範圍 2MHz - 10MHz, 每顆esp32輸出固定的頻率就好. 產生測試訊號用途, 因為要好幾台sig-gen一起出力, 不夠小朋友, 想找便宜的替代方法.  
 
-換一個, 好了, 整數1/2/4MHz 才可, 其他頻率有jitter, 10MHz 不行, 沒時間研究它
+### FFT_on_ESP32_PCM1808_03.zip 不行的 換一個, 好了  
+整數1/2/4MHz 才可, 其他頻率有jitter, 10MHz 不行, 沒時間研究它
 GPIO18 輸出, 腳位看圖
 
 ![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
@@ -10,7 +11,7 @@ GPIO18 輸出, 腳位看圖
 burn.bat 燒錄指令檔, COM3 要改, 每台PC或許會不同
 
 WIN10底下, 燒錄的結果, 
-![burn_firmware_ok.JPG](burn_firmware_ok.JPG)
+![firmware/burn_firmware_ok.JPG](firmware/burn_firmware_ok.JPG)
 
 示波器或者邏輯分析儀掛到GPIO18, 應該可以看到 2MHz 50% 的方波  
 
