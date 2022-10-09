@@ -8,3 +8,28 @@ https://www.edaboard.com/threads/issues-with-generating-11-mhz-square-wave-on-es
 本地存檔 [FFT_on_ESP32_PCM1808_03.zip](FFT_on_ESP32_PCM1808_03.zip)  
 
 試試看行不行, 再來改.  
+
+果然不行, 充滿 BUG 的源碼, 原因??
+```
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+Falling back to built-in command interpreter.
+OK
+>ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1284
+load:0x40078000,len:12808
+load:0x40080400,len:3032
+entry 0x400805e4
+
+Starting ...ESP32_Frequency_generation_2MHz_10MHz_pin18
+
+E (45) ledc: requested frequency and duty resolution can not be achieved, try reducing freq_hz or duty_resolution. div_param=5
+
+Program Started
+
+```
