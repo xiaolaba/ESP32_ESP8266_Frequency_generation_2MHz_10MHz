@@ -3,7 +3,8 @@ esp32, 想現撿現成的, 請問有沒有開源的ARDUINO 項目, 可以在一�
 
 
 懶惰, 找到這個,  
-https://www.edaboard.com/threads/issues-with-generating-11-mhz-square-wave-on-esp32-esp32-wrover-board.401727/post-1730410  
-FFT_on_ESP32_PCM1808_03.zip  
+https://www.edaboard.com/threads/issues-with-generating-11-mhz-square-wave-on-esp32-esp32-wrover-board.401727/post-1730410   
+  
+本地存檔 [FFT_on_ESP32_PCM1808_03.zip](FFT_on_ESP32_PCM1808_03.zip)  
 
 試試看行不行, 再來改.  
