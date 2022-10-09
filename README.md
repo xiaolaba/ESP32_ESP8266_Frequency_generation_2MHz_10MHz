@@ -33,3 +33,9 @@ E (45) ledc: requested frequency and duty resolution can not be achieved, try re
 Program Started
 
 ```
+
+
+### hardware  
+pin 18 used for frequency output  
+硬件 ESP-WROOM-32 只有 4M FLASH, 並沒有 PSRAM……它是 NodeMCU ESP-32S 或者是山寨的??  
+![nodemcu_esp32-s_corrected_pin_lcd.jpg](nodemcu_esp32-s_corrected_pin_lcd.jpg)  
