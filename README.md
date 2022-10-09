@@ -1,8 +1,19 @@
 # ESP32_Frequency_generation_2MHz_10MHz  
 esp32, 想現撿現成的, 請問有沒有開源的ARDUINO 項目, 可以在一個 IO 輸出方波, 頻率範圍 2MHz - 10MHz, 每顆esp32輸出固定的頻率就好. 產生測試訊號用途, 因為要好幾台sig-gen一起出力, 不夠小朋友, 想找便宜的替代方法.  
 
+換一個, 好了, 整數1/2/4MHz 才可, 其他頻率有jitter, 10MHz 不行, 沒時間研究它
+GPIO18 輸出, 腳位看圖
 
-懶惰, 找到這個,  
+![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
+
+### [firmware], 2MHz only
+burn.bat 燒錄指令檔
+
+
+
+
+
+### 懶惰, 找到這個,  
 https://www.edaboard.com/threads/issues-with-generating-11-mhz-square-wave-on-esp32-esp32-wrover-board.401727/post-1730410   
   
 本地存檔 [FFT_on_ESP32_PCM1808_03.zip](FFT_on_ESP32_PCM1808_03.zip)  
