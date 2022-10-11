@@ -1,11 +1,7 @@
 # ESP32_Frequency_generation_2MHz_10MHz  
 esp32, 想現撿現成的, 請問有沒有開源的ARDUINO 項目, 可以在一個 IO 輸出方波, 頻率範圍 2MHz - 10MHz, 每顆esp32輸出固定的頻率就好. 產生測試訊號用途, 因為要好幾台sig-gen一起出力, 不夠小朋友, 想找便宜的替代方法.  
 
-### FFT_on_ESP32_PCM1808_03.zip 不行的 換一個, 好了  
-整數1/2/4MHz 才可, 其他頻率有jitter, 10MHz 不行, 沒時間研究它
-GPIO18 輸出, 腳位看圖
 
-![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
 
 
 ### [firmware_1MHz](firmware_1MHz), 1MHz osc, 修改過的源碼包含在內 
@@ -42,6 +38,13 @@ void line_scan()
 
 
 
+### FFT_on_ESP32_PCM1808_03.zip 不行的 換一個, 好了  
+整數1/2/4MHz 才可, 其他頻率有jitter, 10MHz 不行, 沒時間研究它
+GPIO18 輸出, 腳位看圖
+
+![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
+
+
 ### [firmware](firmware), 2MHz, testing, only  
 burn.bat 燒錄指令檔,  
 COM3 要改, 每台PC或許會不同  
@@ -57,6 +60,10 @@ WIN10底下, 燒錄的結果,
 .
 
 
+### hardware  
+pin 18 used for frequency output  
+硬件 ESP-WROOM-32 只有 4M FLASH, 並沒有 PSRAM……它是 NodeMCU ESP-32S 或者是山寨的??  
+![nodemcu_esp32-s_corrected_pin_lcd.jpg](nodemcu_esp32-s_corrected_pin_lcd.jpg)  
 
 
 ### 懶惰, 找到這個, 果然不行, 放棄它.
@@ -92,7 +99,4 @@ Program Started
 ```
 
 
-### hardware  
-pin 18 used for frequency output  
-硬件 ESP-WROOM-32 只有 4M FLASH, 並沒有 PSRAM……它是 NodeMCU ESP-32S 或者是山寨的??  
-![nodemcu_esp32-s_corrected_pin_lcd.jpg](nodemcu_esp32-s_corrected_pin_lcd.jpg)  
+
