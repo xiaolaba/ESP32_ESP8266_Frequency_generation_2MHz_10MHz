@@ -32,6 +32,15 @@ void line_scan()
 
 ```
 
+掛上 logic analysier, 確認訊號產生如預期  
+
+![firmware_1MHz_logic_log.JPG](firmware_1MHz_logic_log.JPG)  
+
+
+
+
+
+
 
 ### [firmware](firmware), 2MHz, testing, only  
 burn.bat 燒錄指令檔,  
