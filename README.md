@@ -34,7 +34,7 @@ void line_scan()
 
 掛上 logic analysier, 確認訊號產生如預期  
 
-![firmware_1MHz_logic_log.JPG](firmware_1MHz_logic_log.JPG)  
+![firmware_1MHz/logic_log.JPG](firmware_1MHz/logic_log.JPG)  
 
 
 
