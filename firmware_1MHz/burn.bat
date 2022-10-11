@@ -11,7 +11,8 @@ cls
 prompt $xiao
 
 set comport=COM3
-set esptoolpath="C:\Users\user0\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe"
+REM set esptoolpath="C:\Users\user0\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe"
+set esptoolpath="%userprofile%\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe"
 set project=ESP32_Frequency_generation_2MHz_10MHz
 
 :: erase whole flash of esp32
