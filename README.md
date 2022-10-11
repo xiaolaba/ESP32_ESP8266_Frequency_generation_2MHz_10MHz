@@ -7,7 +7,33 @@ GPIO18 輸出, 腳位看圖
 
 ![osc_output_GPIO18.JPG](osc_output_GPIO18.JPG)  
 
-### [firmware](firmware), 2MHz only  
+
+### [firmware_1MHz](firmware_1MHz), 1MHz osc, 修改過的源碼包含在內 
+鄰近的 GPIO5, GPIO17, 輸出50us pulse, 10ms 間隔  
+GPIO2, 板子上的藍色 LED, 微亮, 根據以上pulse 頻率  
+原因如以下源碼所列,
+```
+void line_scan()
+{
+
+  digitalWrite(LINE_PULSE_GPIO, HIGH);
+  digitalWrite(LINE_PULSE_INVERT_GPIO, LOW);
+  digitalWrite(LED_GPIO, HIGH);
+
+  delayMicroseconds(50);  //50us pulse
+//  delay(500);  // 10 ms
+  
+  digitalWrite(LINE_PULSE_GPIO, LOW);
+  digitalWrite(LINE_PULSE_INVERT_GPIO, HIGH);
+  digitalWrite(LED_GPIO, LOW);
+
+  delay(10);  // 10 ms
+}
+
+```
+
+
+### [firmware](firmware), 2MHz, testing, only  
 burn.bat 燒錄指令檔,  
 COM3 要改, 每台PC或許會不同  
 C:\Users\user0\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe, 可能也要改, 每個ARDUINO IDE 版本不同  
