@@ -4,3 +4,5 @@ github, fork, https://github.com/xiaolaba/espI2sClockGen
 
 ### testing
 
+![firmware_ok/test_ok.JPG](firmware_ok/test_ok.JPG)
+
